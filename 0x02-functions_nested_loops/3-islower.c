@@ -6,7 +6,7 @@
  * c: the integer value it receives
  * return: 1 if true, 0 if false.
  */
-int _islower(int C)
+int _islower(int c)
 {
 int i = 'a';
 
