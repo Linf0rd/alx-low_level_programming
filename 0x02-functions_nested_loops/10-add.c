@@ -6,7 +6,7 @@
  * n2 - integer 2
  * description: gives two integers, returns sum
  * return: sum
- * */
+ */
 
 int add(int n1, int n2)
 {
