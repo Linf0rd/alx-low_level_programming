@@ -12,10 +12,10 @@
 int main(void)
 {
 	ssize_t x;
-	char *string = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	x = strlen(string);
-	if (write(2, string, x) != x)
+	x = strlen(str);
+	if (write(2, str, x) != x)
 		return (1);
 
 	return (1);
