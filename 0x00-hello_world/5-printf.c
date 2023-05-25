@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point of the program
  * DEscription: Prints a string using printf
  * Return: 0 (Success)
