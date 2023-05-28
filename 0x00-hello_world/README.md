@@ -2,11 +2,11 @@
 
 #### [0. Preprocessor](0-preprocessor)
 
-A Bash script takes a C file as input, runs it through the C preprocessor using the gcc -E command, and saves the output to a file named c.
+A Bash script that performs preprocessing on a C source code file using the GCC compiler. It saves the preprocessed code to a file named c. The script assumes the variable $CFILE holds the name of the C source code file.
 
 #### [1. Compiler](1-compiler)
 
-A Bash script that compiles a C file using the gcc -c command, and saves the output to a file with the same name as the input file but with a .o extension. The script uses the cut command to remove the extension from the input file name and appends .o to it.
+A Bash script that compiles a C source code file into an object file using the GCC compiler. It saves the resulting object file with the same name as the C file but with the extension .o. The script assumes the variable $CFILE holds the name of the C source code file.
 
 #### [2. Assembler](2-assembler)
 
@@ -34,4 +34,4 @@ A bash script that uses the gcc compiler to generate assembly code in Intel synt
 
 #### [8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity](101-quote.c)
 
-This program uses inline assembly code to call the syscall function to output a string to the standard output without using puts. The string is assigned to the char pointer s, and the length of the string is stored in the long variable l. The inline assembly code is used to set the values of the registers a, d, and s to the values of the variables syscall, fd, and s, respectively, and to set the register D to the value of the variable l. Finally, the syscall function is called, and the return value is stored in the long variable ret. The program then returns 1.
+This C program prints a specific string to the standard error. It uses the write function from the unistd.h library to write the string to the standard error file descriptor (2). The program returns 1 to indicate an error. The string that is printed is "and that piece of art is useful" - Dora Korpar, 2015-10-19".
