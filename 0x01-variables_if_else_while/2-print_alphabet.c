@@ -3,7 +3,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints the alphabet in lowercase using only the putchar function.
+ * Description: Prints the alphabet in lowercase using,
+ *		only the putchar function.
  *
  * Return: Always 0 (Success)
  */
@@ -16,6 +17,8 @@ int main(void)
 	{
 		putchar(a);
 	}
+
+	putchar('\n');
 
 	return (0);
 }
