@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - Entry point of the program.
  *
  * Description: This program assigns a random number to the variable 'n',
  *		each time it is executed. It then prints the last digit of
  *		the number stored in the variable n.
  *
- * Return 0 (Sucess)
+ * Return: 0 (Sucess)
  */
 
 int main(void)
