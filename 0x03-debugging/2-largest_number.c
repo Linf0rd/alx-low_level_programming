@@ -2,7 +2,7 @@
 
 /**
  * largest_number - returns the largest of 3 numbers
- * @: First integer
+ * @a: First integer
  * @b: Second integer
  * @c: Third integer
  * Return: Largest number
