@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	unsigned long fib1 = 1, fib2 = 2, sum = 0;
+	unsigned long fib1 = 1, fib2 = 2, fib_sum = 0, sum = 0;
 	unsigned long limit = 4000000;
 
 	while (fib1 <= limit)
@@ -17,9 +17,9 @@ int main(void)
 		if (fib1 % 2 == 0)
 			sum += fib1;
 
-		sum = fib1 + fib2;
+		fib_sum = fib1 + fib2;
 		fib1 = fib2;
-		fib2 = sum;
+		fib2 = fib_sum;
 	}
 
 	printf("%lu\n", sum);
