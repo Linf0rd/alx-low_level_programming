@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - Entry point of the program
@@ -8,20 +9,20 @@
 
 int main(void)
 {
-	unsigned long long fib1 = 1, fib2 = 2, fib_sum = 0, even = 0;
-	int limit = 4000000, x;
+	unsigned long fib1 = 1, fib2 = 2, sum = 0;
+	unsigned long limit = 4000000;
 
 	while (fib1 <= limit)
 	{
 		if (fib1 % 2 == 0)
-			even += fib1;
+			sum += fib1;
 
-		fib_sum = fib1 + fib2;
+		sum = fib1 + fib2;
 		fib1 = fib2;
-		fib2 = fib_sum;
+		fib2 = sum;
 	}
 
-	printf("%llu\n", even);
+	printf("%lu\n", sum);
 
 	return (0);
 }
