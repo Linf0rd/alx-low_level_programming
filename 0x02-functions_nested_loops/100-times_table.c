@@ -19,14 +19,35 @@ void print_times_table(int n)
 		for (y = 0; y <= n; y++)
 		{
 			product = x * y;
+			
 			if (y != 0)
-				printf(", ");
-			if (product < 10 && y != 0)
-				printf("   ");
+			{
+				_putchar(',');
+				_putchar(' ');
+
+				if (product < 10)
+					_putchar(' ');
+
+				if (product < 100)
+					_putchar(' ');
+			}
+
+			if (product < 10)
+			{
+				_putchar(product + '0');
+			}
 			else if (product < 100)
-				printf("  ");
-			printf("%d", product);
+			{
+				_putchar(product / 10 + '0');
+				_putchar(product % 10 + '0');
+			}
+			else
+			{
+				_putchar(product / 100 + '0');
+				_putchar((product / 10) % 10 + '0');
+				_putchar(product % 10 + '0');
+			}
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
